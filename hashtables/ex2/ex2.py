@@ -11,4 +11,15 @@ def reconstruct_trip(tickets, length):
     """
     # Your code here
 
+    table = {}
+
+    for s, d in tickets:
+        if s == "NONE":
+            table[s] = d
+        elif d == s:
+            table[s] = d
+        elif d == "NONE":
+            table[s] = d
+    
+    route = [table]
     return route

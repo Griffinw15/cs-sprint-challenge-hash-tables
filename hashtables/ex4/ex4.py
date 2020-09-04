@@ -1,9 +1,16 @@
+from collections import Counter
+
 def has_negatives(a):
     """
     YOUR CODE HERE
     """
     # Your code here
 
+    result = [i.strip(-) for i in a]
+
+    for i in results:
+        if Counter(i) < 2:
+            result.pop(i)
     return result
 
 
