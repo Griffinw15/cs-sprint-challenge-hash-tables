@@ -11,7 +11,7 @@ def intersection(arrays):
 
     for i in arrays:
         for num in i:
-            d[num] 
+            d[num] = 
     for num in result:
         if Counter(num) > 1:
             result.append(num)

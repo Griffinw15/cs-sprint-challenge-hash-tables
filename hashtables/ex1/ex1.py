@@ -6,11 +6,13 @@ def get_indices_of_item_weights(weights, length, limit):
 
     d = {}
 
-    for k, v in weights:
-        if v < limit:
-            d[k] = v
-        for k, v in d:
-            if v + v
+    for i in range(len(weights)):
+        if i < limit:
+            d[weights[i]] = i
 
+    for i in range(len(weights)):
+        target = limit - weights[i]
+        if target in d:
+            return(max(i, d[target]), min(i, d[target]))
 
     return None
