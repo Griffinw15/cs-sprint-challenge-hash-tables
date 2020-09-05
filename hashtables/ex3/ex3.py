@@ -1,9 +1,20 @@
+from collections import Counter
+
 def intersection(arrays):
     """
     YOUR CODE HERE
     """
     # Your code here
 
+    d = {}
+    result = []
+
+    for i in arrays:
+        for num in i:
+            d[num] = 
+    for num in result:
+        if Counter(num) > 1:
+            result.append(num)
     return result
 
 
